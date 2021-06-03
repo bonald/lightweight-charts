@@ -190,6 +190,9 @@ export interface PriceScaleOptions {
 	 * @defaultValue 0
 	 */
 	minimumWidth: number;
+	/** True value add a small horizontal ticks on price axis labels */
+	drawTicks: boolean;
+	width: number;
 }
 
 interface RangeCache {
