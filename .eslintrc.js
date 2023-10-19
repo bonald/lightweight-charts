@@ -476,7 +476,7 @@ module.exports = {
 			},
 			rules: {
 				'no-unused-vars': 'off',
-				/*'jsdoc/require-jsdoc': [
+				/* 'jsdoc/require-jsdoc': [
 					'error',
 					{
 						contexts: [
@@ -488,8 +488,8 @@ module.exports = {
 							'TSTypeAliasDeclaration',
 						],
 					},
-				],*/
-				//'jsdoc/require-param': 'error',
+				], */
+				// 'jsdoc/require-param': 'error',
 				// d.ts files are mostly read by computers (to generate docs, provide intellisense, etc.)
 				// so consistent quote characaters aren't important.
 				'@typescript-eslint/quotes': 'off',
@@ -791,8 +791,8 @@ module.exports = {
 			markers: ['=', '!', '/'], // space here to support sprockets directives
 		}],
 
-		//'jsdoc/check-indentation': 'error',
-		//'jsdoc/newline-after-description': 'error',
+		// 'jsdoc/check-indentation': 'error',
+		// 'jsdoc/newline-after-description': 'error',
 
 		'import/no-default-export': 'error',
 
