@@ -221,20 +221,16 @@ export class PriceAxisWidget implements IDestroyable {
 		if (firstValue !== null && this._size !== null) {
 			const topValue = this._priceScale.coordinateToPrice(1 as Coordinate, firstValue);
 			const bottomValue = this._priceScale.coordinateToPrice(this._size.height - 2 as Coordinate, firstValue);
-		
 			tickMarkMaxWidth = Math.max(
 				tickMarkMaxWidth,
 				this._widthCache.measureText(ctx, this._priceScale.formatPrice(Math.floor(Math.min(topValue, bottomValue)) + 0.11111111111111, firstValue)),
 				this._widthCache.measureText(ctx, this._priceScale.formatPrice(Math.ceil(Math.max(topValue, bottomValue)) - 0.11111111111111, firstValue))
 			);
 		}
-		
 		ctx.restore();
-		
 		tickMarkMaxWidth = Math.max(tickMarkMaxWidth, rendererOptions.width);
-		
 		const resultTickMarksMaxWidth = tickMarkMaxWidth || Constants.DefaultOptimalWidth;
-		let res = Math.ceil(
+		const res = Math.ceil(
 			rendererOptions.borderSize +
 			rendererOptions.tickLength +
 			rendererOptions.paddingInner +

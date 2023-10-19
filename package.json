@@ -51,6 +51,7 @@
     "node": ">=16.16.0"
   },
   "dependencies": {
+    "@tsconfig/docusaurus": "~2.0.2",
     "fancy-canvas": "2.1.0"
   },
   "devDependencies": {

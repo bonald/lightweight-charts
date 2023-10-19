@@ -16,5 +16,5 @@ export const priceScaleOptionsDefaults: PriceScaleOptions = {
 	},
 	minimumWidth: 0,
 	width: 0,
-	drawTicks:false,
+	drawTicks: false,
 };

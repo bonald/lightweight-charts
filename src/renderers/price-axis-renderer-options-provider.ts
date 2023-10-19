@@ -25,7 +25,7 @@ export class PriceAxisRendererOptionsProvider {
 		paddingOuter: 0,
 		paddingTop: 0,
 		baselineOffset: 0,
-		width: 0
+		width: 0,
 	};
 
 	public constructor(chartModel: IChartModelBase) {
@@ -52,7 +52,6 @@ export class PriceAxisRendererOptionsProvider {
 		rendererOptions.color = this._textColor();
 		rendererOptions.paneBackgroundColor = this._paneBackgroundColor();
 		rendererOptions.width = this._width();
-		
 		return this._rendererOptions;
 	}
 
